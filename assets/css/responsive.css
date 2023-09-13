@@ -55,7 +55,16 @@
 		padding: 30px 0px;
 	}
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 768px){
+	.header-style-three .nav-outer .mobile-nav-toggler{
+		margin-left: 450px;
+	}
+	
+}
+@media only screen and (max-width: 970px){
+	.footer-social-icon{
+		visibility: hidden;
+	}
 	/* Default */
 	.main-header .nav-outer .main-menu,
 	.sticky-header{
@@ -437,7 +446,7 @@
 }
 @media only screen and (max-width: 575px){
 	.d-flex {
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 	.form-alt {
 		padding-left: 20px;

@@ -398,7 +398,7 @@ img {
     top: -85px;
 }
 .section-padding {
-	padding: 150px 0 120px;
+	padding: 10px 0 120px;
 }
 /* btn 1 */
 .btn-1 {
@@ -502,7 +502,7 @@ a.btn-1.alt:hover {
 }
 .main-header .auto-container {
     max-width: 100%;
-    padding: 0 70px;
+   
 }
 
 .header-cart-icon {
@@ -1086,7 +1086,7 @@ span.header-cart-icon-count {
 	border-radius: 50%;
 	float: right;
 	margin: 13px 0;
-	margin-left: 15px;
+	margin-left: 160px;
 	display: none;
 }
 .mobile-menu {
@@ -1856,7 +1856,7 @@ p.contact-info-1-phone-tel {
 }
 
 .banner-style-1 .content-box {
-    padding: 80px 15px 135px;
+    padding: 120px 15px 135px;
 }
 
 /** scroll-to-top **/
@@ -6711,7 +6711,7 @@ h3.blog-1-title a{
 
 .contact-form-section{
 	position: relative;
-	padding-top: 140px;
+	padding-top: 50px;
 }
 
 .info-block-one{
