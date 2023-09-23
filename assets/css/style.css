@@ -262,7 +262,7 @@ section {
 }
 .auto-container {
 	position: static;
-	max-width: 1320px;
+	
 	padding: 0px 15px;
 	margin: 0 auto;
 }
@@ -399,6 +399,9 @@ img {
 }
 .section-padding {
 	padding: 150px 0 120px;
+}
+.section-padding-2 {
+	padding: 0px 0 120px;
 }
 /* btn 1 */
 .btn-1 {
