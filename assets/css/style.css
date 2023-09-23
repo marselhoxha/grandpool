@@ -398,7 +398,7 @@ img {
     top: -85px;
 }
 .section-padding {
-	padding: 10px 0 120px;
+	padding: 150px 0 120px;
 }
 /* btn 1 */
 .btn-1 {
@@ -3389,6 +3389,10 @@ section.cta-2-section {
 
 .product-1-thumb {
     min-height: 305px;
+    position: relative;
+}
+.product-2-thumb {
+    min-height: 105px;
     position: relative;
 }
 
