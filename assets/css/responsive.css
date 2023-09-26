@@ -65,6 +65,9 @@
 	.footer-social-icon{
 		visibility: hidden;
 	}
+	.nav-outer.main-menu.navigation.kontakt{
+		visibility: hidden;
+	}
 	/* Default */
 	.main-header .nav-outer .main-menu,
 	.sticky-header{
