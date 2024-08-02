@@ -462,12 +462,12 @@ blockquote:hover::before {
 
 blockquote p {
     display: inline;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 blockquote:hover p {
-    color: #333; /* Darker text color for better contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Stronger text shadow */
+    color: rgb(0, 0, 0); /* Darker text color for better contrast */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Stronger text shadow */
 }
 
 /* btn 1 */
