@@ -277,7 +277,7 @@
                 parallax: false,
                 effect: "slide",
 				autoplay: {
-				    delay: 800000,
+				    delay: 8000,
                     disableOnInteraction: false
 				},
 	            navigation: {

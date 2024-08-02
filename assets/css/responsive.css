@@ -65,9 +65,7 @@
 	.footer-social-icon{
 		visibility: hidden;
 	}
-	.nav-outer.main-menu.navigation.kontakt{
-		visibility: hidden;
-	}
+	
 	/* Default */
 	.main-header .nav-outer .main-menu,
 	.sticky-header{
@@ -246,6 +244,7 @@
 		visibility:hidden;
 		opacity:0;
 	}
+	
 }
 @media only screen and (max-width: 767px){	
 	.auto-container {
@@ -494,7 +493,18 @@
 	}
 	
 }
+@media only screen and (max-width: 768px){
+	.page-title .bg-layer{
+		height: 13%;
+	}
+}
+@media only screen and (min-width: 769px){.page-title .bg-layer{
+	height: 18%;
+}}
 @media only screen and (max-width: 499px){
+	.page-title .bg-layer{
+		height: 10%;
+	}
 	.main-header .header-upper .logo-box .logo {
 		width: 130px;
 	}

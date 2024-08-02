@@ -398,11 +398,78 @@ img {
     top: -85px;
 }
 .section-padding {
-	padding: 150px 0 120px;
+	padding: 50px 0 50px;
 }
 .section-padding-2 {
 	padding: 0px 0 120px;
 }
+blockquote {
+    font-style: italic;
+    position: relative;
+    padding: 1.5em 20px;
+    margin: 1.5em 10px;
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, #ffa500, #1e90ff) 1;
+    background: #f9f9f9;
+    color: #555;
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    color: #FF5C00;
+    transition: all 0.8s ease-in-out;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+blockquote::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.4), rgba(255, 165, 0, 0.4));
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+    transform: scale(1.5);
+}
+
+blockquote:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+blockquote:hover {
+    background: linear-gradient(to right, #e0f7fa, #fff5e6);
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, #1e90ff, #ffa500) 1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.08);
+    color: #333; /* Darker text color for better contrast */
+}
+
+blockquote:hover::before {
+    color: #1e90ff;
+    transform: scale(1.3);
+}
+
+blockquote p {
+    display: inline;
+    transition: all 0.8s ease-in-out;
+}
+
+blockquote:hover p {
+    color: #333; /* Darker text color for better contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Stronger text shadow */
+}
+
 /* btn 1 */
 .btn-1 {
 	position: relative;
@@ -1588,6 +1655,83 @@ p.contact-info-1-phone-tel {
 	display: table;
 	vertical-align: middle;
 }
+.section-padding-fade-box{
+	padding: 1px 0 1px;
+	
+}
+.section-padding-fade-box h4{
+	font-size: 30px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner-section {
+    position: relative;
+    z-index: 1; /* Ensure the banner section is on a lower layer */
+}
+
+.fade-in-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    background: linear-gradient(135deg, #fff, #f9f9f9); /* Gradient background */
+    padding: 60px; /* Increased padding for more space */
+    margin: 0 auto;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1), 0 16px 40px rgba(0, 0, 0, 0.2); /* Cool shadows */
+    max-width: 800px;
+    text-align: center;
+    font-size: 26px; /* Slightly larger font size */
+    color: #333;
+    border-top: 8px solid #ff6600; /* Orange accent */
+    position: absolute;
+    top: calc(100% + 0px); /* Position the box slightly above the bottom of the banner */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure the fade-in box is on a higher layer */
+}
+
+/* Trigger the fade-in effect when the element comes into view */
+.fade-in-box.in-view {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .fade-in-box {
+        max-width: 90%;
+        padding: 30px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fade-in-box {
+        max-width: 95%;
+        padding: 25px;
+        font-size: 20px;
+        top: calc(100% - 50px);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fade-in-box {
+        width: 350px;
+        padding: 20px;
+        font-size: 18px;
+        top: calc(100% - 40px);
+        border-radius: 10px;
+	}
+	.section-padding-fade-box h4{
+		font-size: 25px;
+		font-weight: 300;
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	}
+}
+.banner-section .content-outer .mobile { display: none }
+@media (max-width: 640px) {
+    .banner-section .content-outer .mobile { display: block }
+    .banner-section .content-outer .desktop { display: none }
+}
 .banner-section .content-box {
 	position: relative;
 	padding: 135px 15px 135px;
@@ -1764,14 +1908,14 @@ p.contact-info-1-phone-tel {
 	line-height: 72px;
 	border-radius: 50%;
 	text-align: center;
-	background: #ffffff;
+	background: #008bd042;
 	cursor: pointer;
 	z-index: 9;
-	margin-right: 40px;
+	margin-right: 15px;
 	font-size: 15px;
 	transition: .5s;
-	border: 2px solid #fff;
-	color: #333;
+	border: 2px solid rgba(255, 255, 255, 0.11);
+	color: rgb(255, 255, 255);
 }
 .banner-section .banner-slider-button-next:hover {
 	background-color: var(--primary-color);
@@ -1785,14 +1929,14 @@ p.contact-info-1-phone-tel {
 	line-height: 72px;
 	border-radius: 50%;
 	text-align: center;
-	background: #ffffff;
+	background: #008bd042;
 	cursor: pointer;
 	z-index: 9;
-	margin-left: 40px;
+	margin-left: 15px;
 	font-size: 15px;
 	transition: .5s;
-	border: 2px solid #fff;
-	color: #333;
+	border: 2px solid rgba(255, 255, 255, 0.11);
+	color: rgb(255, 255, 255);
 }
 .banner-section .banner-slider-button-prev:hover {
 	background-color: var(--primary-color);
@@ -3978,7 +4122,7 @@ a.service-2-link-btn:before {
 .page-title .bread-crumb li{
 	position: relative;
 	display: inline-block;
-	font-size: ;
+	font-size: 18px;
 }
 
 .page-title .bread-crumb li{
@@ -4968,6 +5112,7 @@ a.service-2-link-btn:before {
 
 .shop-page-section{
 	position: relative;
+	margin-top: -125px;
 }
 
 .shop-sidebar{
@@ -6462,6 +6607,7 @@ h3.blog-1-title a{
 	padding: 42px 150px 42px 50px;
 	box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1);
 	border-left: 5px solid var(--primary-color);
+	border-right: 5px solid var(--primary-color);
 	margin: 50px 0px;
 }
 
