@@ -2581,8 +2581,9 @@ section.whychoous-1-section {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 35px 35px 34px;
+	padding: 35px 35px 34px;
 }
+
 
 .whychoous-1-icon {
     font-size: 35px;
